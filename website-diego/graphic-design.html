@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/x-icon" href="Final logo.png">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nav Sample</title>
+	<link type="text/css" rel="stylesheet" href="/graphic-style.css">
+</head>
+<body>
+
+
+<header>
+		<nav>
+			<a href="index.html" class="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="/home.html" class="active">Home</a></li>
+				<li><a href="/about-me.html">About me</a></li>
+				<li><a href="/graphic-design.html">Graphic Design</a></li>
+				<li><a href="/2d-art.html">2d Art</a></li>
+				<li><a href="/contactpage.html">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+<section class="top">
+
+<h1>GRAPHIC DESIGN</h1>
+<h2>Portfolio</h2>
+
+<!-- Filter Buttons -->
+<div id="myBtnContainer">
+    <button class="btn active"
+    onclick="filterSelection('all')">All</button>
+
+    <button class="btn"
+    onclick="filterSelection('mockups')">Mockups</button>
+
+    <button class="btn"
+    onclick="filterSelection('Typography')">Typography</button>
+</div>
+</section>
+
+<!-- Portfolio Gallery Grid -->
+ <div class="row">
+  <div class="column mockups">
+    <div class="content">
+      <img src="media/Bloom logos.png" alt="Logo" style="width:100%">
+      <h4>Bloom Logos</h4>
+      <p>One name, three identities design</p>
+    </div>
+  </div>
+<div class="row">
+  <div class="column mockups">
+    <div class="content">
+      <img src="media/Make up Brochure.png" alt="Mockup" style="width:100%">
+      <h4>Make up Brochure</h4>
+      <p>Make up & Beauty brochure design</p>
+    </div>
+  </div>
+  <div class="column mockups">
+    <div class="content">
+      <img src="media/Lawn & Garnering.png" alt="Gardening" style="width:100%">
+      <h4>Lawn & Garnering</h4>
+      <p>Lawn and Gardening brochure design</p>
+    </div>
+  </div>
+  <div class="column mockups">
+    <div class="content">
+      <img src="media/Cafe Blantss Card.png" alt="Cafe Card" style="width:100%">
+      <h4>Cafe Blantss Card</h4>
+      <p>Cafe business card design</p>
+    </div>
+  </div>
+
+  <div class="column Typography">
+    <div class="content">
+      <img src="media/Bodoni posters.png" alt="Bodoni" style="width:100%">
+      <h4>Bodoni Posters</h4>
+      <p>2 posters inspired by Bodoni typeface and design</p>
+    </div>
+  </div>
+  <div class="column Typography">
+    <div class="content">
+      <img src="media/Typography Book.png" alt="Art Book" style="width:100%">
+      <h4>Typography Book</h4>
+      <p>Typography book design</p>
+    </div>
+  </div>
+  <div class="column Typography">
+    <div class="content">
+      <img src="media/Typography Dice Black.png" alt="Dice" style="width:100%">
+      <h4>Typography Dice</h4>
+      <p>Typography dice design</p>
+    </div>
+  </div>
+  <div class="column Typography">
+    <div class="content">
+      <img src="media/Typography Dice Color.png" alt="Dice" style="width:100%">
+      <h4>Typography Dice 2</h4>
+      <p>Typography dice with color design</p>
+    </div>
+  </div> 
+
+<!-- END GRID -->
+</div>
+<footer>
+	<p class="footer-text">&copy; 2026 Diego Blanco Moreira. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

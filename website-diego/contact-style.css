@@ -1,0 +1,300 @@
+/*-- CSS Reset --*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* --- NAVIGATION --- */
+html,
+		body {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		.logo {
+			width: 40px;
+			height: 40px;
+			background-image: url('Final Logo.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+		}
+
+		.logo:hover {
+			background-image: url('Final Logo.png');
+		}
+
+		nav {
+			background-color: #000000;
+			box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+			position: fixed;
+			width: 100%;
+			z-index: 3;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;
+			background-color: #000000;
+		}
+
+		nav li a {
+			display: block;
+			font-family: 'Inter', sans-serif;
+			padding: 20px 40px;
+			text-decoration: none;
+			color: #ffffff;
+			font-weight: 600;
+		}
+
+		.active {
+			background-color: #000;
+			color: #fff;
+		}
+
+		nav li a:hover,
+		nav .menu-btn:hover {
+			background-color: #ff0000;
+			color: #fff;
+		}
+
+		nav .logo {
+			display: block;
+			float: left;
+			font-size: 2em;
+			padding: 10px 40px 10px 40px;
+			text-decoration: none;
+		}
+
+		/* MENU */
+
+		nav .menu {
+			clear: both;
+			max-height: 0;
+			transition: max-height .2s ease-out;
+		}
+
+		/* MENU ICON */
+
+		nav .menu-icon {
+			cursor: pointer;
+			float: right;
+			padding: 28px 40px;
+			position: relative;
+			user-select: none;
+		}
+
+		nav .menu-icon .navicon {
+			background: #000;
+			display: block;
+			height: 4px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 24px;
+		}
+
+		nav .menu-icon .navicon:before,
+		nav .menu-icon .navicon:after {
+			background: #000;
+			content: '';
+			display: block;
+			height: 100%;
+			position: absolute;
+			transition: all .2s ease-out;
+			width: 100%;
+		}
+
+		nav .menu-icon .navicon:before {
+			top: 8px;
+		}
+
+		nav .menu-icon .navicon:after {
+			top: -8px;
+		}
+
+		/* MENU btn */
+
+		nav .menu-btn {
+			display: none;
+		}
+
+		nav .menu-btn:checked~.menu {
+			max-height: 240px;
+		}
+
+		nav .menu-btn:checked~.menu-icon .navicon {
+			background: transparent;
+		}
+
+		nav .menu-btn:checked~.menu-icon .navicon:before {
+			transform: rotate(-45deg);
+		}
+
+		nav .menu-btn:checked~.menu-icon .navicon:after {
+			transform: rotate(45deg);
+		}
+
+		nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+		nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+			top: 0;
+		}
+
+		/* 48em = 768px */
+
+		@media (min-width: 48em) {
+			nav li {
+				float: left;
+			}
+
+			nav li a {
+				padding: 22px 40px;
+			}
+
+			nav .menu {
+				clear: none;
+				float: right;
+				max-height: none;
+			}
+
+			nav .menu-icon {
+				display: none;
+			}
+		}
+
+
+/*-- MY CODE STARTS HERE --*/
+
+.top {
+	padding-top: 100px;
+}
+
+h1 {
+	padding-top: 100px;
+	color: #000000;
+	font-size: 50px;
+	text-align: left;
+	padding-left: 20px;
+	font-family: 'Futura', sans-serif;
+
+}
+img {
+	display: block;
+	margin: 20px auto;
+	max-width: 100%;
+	height: auto;
+	position: left;
+}
+
+p {
+	color: #666;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: left;
+  padding-left: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+h2 {
+	text-align: right;
+	font-size: 20px;
+	color: #000000;
+	font-family: 'Futura', sans-serif;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+	font-family: 'Inter', sans-serif;
+}
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+br {
+	display: block;
+	margin: 20px auto;
+	content: "";
+	border-top: 1px solid #000000;
+	width: 80%;
+	position: left;
+	padding-left: 20px;
+}
+
+label {
+	display: block;
+	margin: 10px auto;
+	font-size: 16px;
+	color: #000000;
+	padding-left: 40px;
+	font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Light-BETA.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('FuturaCyrillicBold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/x-icon" href="Final logo.png">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nav Sample</title>
+	<link type="text/css" rel="stylesheet" href="/2d-style.css">
+</head>
+<body>
+
+
+<header>
+		<nav>
+			<a href="index.html" class="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="/home.html" class="active">Home</a></li>
+				<li><a href="/about-me.html">About me</a></li>
+				<li><a href="/graphic-design.html">Graphic Design</a></li>
+				<li><a href="/2d-art.html">2d Art</a></li>
+				<li><a href="/contactpage.html">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+<section class="top">
+<h1>2D ART</h1>
+<h2>Portfolio</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Sketches')"> Sketches</button>
+  <button class="btn" onclick="filterSelection('Paintings')"> Paintings</button>
+  <button class="btn" onclick="filterSelection('Drawings')"> Drawings</button>
+</div>
+</section>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Sketches">
+    <div class="content">
+      <img src="media/Sketch 1.png" alt="Practice sketch" style="width:100%">
+      <h4>Practice Sketch</h4>
+      <p>A simple practice sketch i did for my portfolio</p>
+    </div>
+  </div>
+  <div class="column Sketches">
+    <div class="content">
+      <img src="media/Project The portrait.png" alt="The Portrait" style="width:100%">
+      <h4>The Portrait</h4>
+      <p>A detailed portrait I created for my portfolio</p>
+    </div>
+  </div>
+  <div class="column Sketches">
+    <div class="content">
+      <img src="media/The shout-8.5x11.jpg" alt="The Shout" style="width:100%">
+      <h4>The Shout</h4>
+      <p>A dramatic scene I made back in highschool, inspired by Bendy and the dark revival</p>
+    </div>
+  </div>
+<div class="column Sketches">
+    <div class="content">
+      <img src="media/Project values.png " alt="Sphere" style="width:100%">
+      <h4>Project Values</h4>
+      <p>Practice sketch i made using Chiaroscuro for college</p>
+    </div>
+  </div>
+
+  <div class="column Paintings">
+    <div class="content">
+      <img src="media/Boat painting-20x16.jpg" alt="Quiet boat" style="width:100%">
+      <h4>Retro</h4>
+      <p>A retro-style painting I created for my portfolio</p>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+      <img src="media/Dog Painting-24x18.jpg" alt="Dog" style="width:100%">
+      <h4>Colorful dog</h4>
+      <p>A colorful dog painting I created for my portfolio</p>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+      <img src="media/Green Apples painting.jpg" alt="Green Apples" style="width:100%">
+      <h4>Green Apples</h4>
+      <p>A painting of green apples I created for my portfolio</p>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+      <img src="media/Project Ink & Wash.png" alt="Ink and Wash" style="width:100%">
+      <h4>Ink and Wash</h4>
+      <p>A painting created using ink and wash techniques</p>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+      <img src="media/House painting-24x18.jpg" alt="Colorful House" style="width:100%">
+      <h4>Colorful House</h4>
+      <p>A colorful house painting I created for my portfolio</p>
+    </div>
+  </div>
+  
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Gray Man.jpg" alt="Woodcut Portrait" style="width:100%">
+      <h4>Gray Man</h4>
+      <p>A woodcut portrait I created for my highschool art class</p>
+    </div>
+  </div>
+
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Black Krrsantan-17.5x11.5.jpg" alt="Star wars woodcut 1" style="width:100%">
+      <h4>Black Krrsantan</h4>
+      <p>A woodcut of the character Black Krrsantan from Star Wars</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Darth vader-17.5x11.5.jpg" alt="Star wars woodcut 2" style="width:100%">
+      <h4>Empire Strikes Back</h4>
+      <p>A woodcut of Darth Vader and the stormtroopers from Star Wars</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/VenomvsCarnage-5x9.jpg" alt="Venom vs Carnage" style="width:100%">
+      <h4>Let There Be Carnage</h4>
+      <p>A drawing of the characters Venom and Carnage from Spider-Man</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/pastel flower drawing-13x20.jpg" alt="Pastel Flower" style="width:100%">
+      <h4>Pastel Flower</h4>
+      <p>A pastel drawing of a flower I created for my portfolio</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Texture and Repetition.png" alt="Texture and Repetition" style="width:100%">
+      <h4>Texture and Repetition</h4>
+      <p>A college assignment exploring texture and repetition</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Abstract Pastel Drawing-20x13.jpg" alt="Abstract Pastel Drawing" style="width:100%">
+      <h4>Abstract Pastel Drawing</h4>
+      <p>An abstract drawing I made using pastel colors</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Chiaroscuro 1.png" alt="Chiaroscuro 1" style="width:100%">
+      <h4>Chiaroscuro 1</h4>
+      <p>A drawing exploring the contrast of light and shadow</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Chiaroscuro 2.png" alt="Chiaroscuro 2" style="width:100%">
+      <h4>Chiaroscuro 2</h4>
+      <p>A drawing exploring the contrast of light and shadow</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Chiaroscuro 3.png" alt="Chiaroscuro 3" style="width:100%">
+      <h4>Chiaroscuro 3</h4>
+      <p>A drawing exploring the contrast of light and shadow</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Chiaroscuro 4.png" alt="Chiaroscuro 4" style="width:100%">
+      <h4>Chiaroscuro 4</h4>
+      <p>A drawing exploring the contrast of light and shadow</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Chiaroscuro 5.png" alt="Chiaroscuro 5" style="width:100%">
+      <h4>Chiaroscuro 5</h4>
+      <p>A drawing exploring the contrast of light and shadow</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Chiaroscuro 6.png" alt="Chiaroscuro 6" style="width:100%">
+      <h4>Chiaroscuro 6</h4>
+      <p>A drawing exploring the contrast of light and shadow</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Toned Paper 1.png" alt="Toned Paper 1" style="width:100%">
+      <h4>Toned Paper 1</h4>
+      <p>A drawing created on toned paper</p>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="media/Toned Paper 2.png" alt="Toned Paper 2" style="width:100%">
+      <h4>Toned Paper 2</h4>
+      <p>A drawing created on toned paper</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+<footer>
+	<p class="footer-text">&copy; 2026 Diego Blanco Moreira. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

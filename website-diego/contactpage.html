@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link rel="icon" type="image/x-icon" href="Final logo.png">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nav Sample</title>
+	<link type="text/css" rel="stylesheet" href="/contact-style.css">
+</head>
+<body>
+
+
+<header>
+		<nav>
+			<a href="index.html" class="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="/home.html" class="active">Home</a></li>
+				<li><a href="/about-me.html">About me</a></li>
+				<li><a href="/graphic-design.html">Graphic Design</a></li>
+				<li><a href="/2d-art.html">2d Art</a></li>
+				<li><a href="/contactpage.html">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+<h1>CONTACT</h1>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="01e8ce3f-1cdb-4da5-9c74-e2a0a2de6ad9">
+  <label>
+    <p>Your name:</p>
+    <input class="contact-name" type="text" name="name" required>
+  </label>
+    <label>
+        <p>Your email:</p>
+        <input class="contact-email" type="email" name="email" required>
+    </label>
+    <label>
+        <p>Your message:</p>
+        <textarea class="contact-message" name="message" required></textarea>
+    </label>
+    <br>
+    <button type="submit">Submit Form</button>
+</form>
+
+</body>
+</html>
