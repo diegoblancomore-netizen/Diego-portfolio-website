@@ -54,7 +54,7 @@ html,
 		.logo {
 			width: 40px;
 			height: 40px;
-			background-image: url('Final Logo.png');
+			background-image: url('media/Final Logo.png');
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -62,7 +62,7 @@ html,
 		}
 
 		.logo:hover {
-			background-image: url('Final Logo.png');
+			background-image: url('media/Final Logo.png');
 		}
 
 		nav {
